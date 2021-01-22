@@ -8,19 +8,6 @@ from chart.models import datas
 from chart.api.serializers import DatasSerialzer
 
 
-# @api_view(['GET'])
-# @permission_classes((permissions.AllowAny,))
-# def api_datas_view(request):
-#
-#     try:
-#         data = datas.objects.get()
-#     except datas.DoesNotExist:
-#         return Response(status=status.HTTP_404_NOT_FOUND)
-#
-#     if request.method == 'GET':
-#         serializer = DatasSerialzer(data)
-#         return Response(serializer.data)
-
 class api_datas_view(ListAPIView):
     permission_classes = (permissions.AllowAny,)
     queryset = datas.objects.all()
