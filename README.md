@@ -1,6 +1,8 @@
 # ChartJs
 
 
+Database is use default sqlite handleing with DjangORM.
+
 ```
 */ChartJs
 
