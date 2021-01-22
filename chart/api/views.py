@@ -15,8 +15,6 @@ class api_datas_view(ListAPIView):
     search_fields = ['number', 'value']
 
 
-
-
 @api_view(['POST'])
 def api_create_datas_view(request):
     data_obj = datas()
